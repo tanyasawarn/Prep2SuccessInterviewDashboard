@@ -1,0 +1,169 @@
+ /* Navbar Container */
+.navbar {
+  position: fixed; /* Make the navbar fixed to the top */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+/* Add some margin to the body to prevent content from being hidden behind the fixed navbar */
+body {
+  margin-top: 60px; /* Adjust this value based on the navbar height */
+}
+
+/* Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 8px;
+}
+
+/* Center Links */
+.navbar-center {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.navbar-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: #00796b;
+}
+
+/* Right Section Buttons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signin-button {
+  padding: 8px 16px;
+  border: 1px solid #00796b;
+  color: #00796b;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #e0f2f1;
+}
+
+.experience-button {
+  padding: 8px 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+
+.experience-button:hover {
+  background-color: #004d40;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+
+/* Button Styles for Login */
+.navbar-button {
+  background-color: #f07828;
+  color: #fff;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #ff6600;
+}
+
+.navbar-button:active {
+  background-color: #005fa3;
+}
+
+
+/* Adjust the .user-initials div to make it relative so the logout menu can be positioned below it */
+.user-initials {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Make this position relative to the navbar */
+}
+
+/* Styling for the logout menu */
+.logout-menu {
+  position: absolute;
+  top: 45px; /* Adjust this value to make the logout button appear slightly below */
+  right: 0;
+  padding: 10px;
+  z-index: 999; /* Ensure the menu is above other content */
+  width: 120px; /* Set a fixed width for the menu */
+}
+
+/* Styling for the logout button */
+.navbar-logout-button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.navbar-logout-button:hover {
+  background-color: #ff4500;
+}
+
+/* Optional: Add a transition to make the button fade in/out */
+.logout-menu {
+  transition: all 0.3s ease-in-out;
+}

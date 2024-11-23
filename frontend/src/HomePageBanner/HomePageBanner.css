@@ -1,0 +1,165 @@
+.dashboard-container {
+  width: 100vw;
+  height: 70vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/IDBannerImage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Position the key highlights on top of the banner */
+ 
+
+ .content-section{
+  margin-top: 0rem;
+ }
+  
+  .content-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #1a1a1a;
+    line-height: 1.3;
+  }
+  
+  .highlight-text {
+    color: #ff6600;
+  }
+ 
+   
+  
+  .features-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .features-list li:before {
+    content: '✔';
+    color: #73b8ff;
+    margin-right: 8px;
+  }
+   */
+   .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+    padding-left: 24px;  
+    position: relative;
+}
+
+.features-list li:before {
+    content: '✔';
+    color: #73b8ff;
+    position: absolute;
+    left: 0;  
+    top: 0;
+    font-size: 1rem;  
+}
+
+  
+  .register-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #1558a0;
+  }
+  
+  .countdown {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .timer div {
+    text-align: center;
+  }
+  
+  .instructors-section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .instructor-card {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    position: relative;
+  }
+  
+  .instructor-card strong {
+    display: block;
+    font-size: 1.1rem;
+  }
+  
+  .instructor-card p {
+    font-size: 0.9rem;
+  }
+  
+  .company-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+ 
+    
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content-section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .features-list {
+      font-size: 0.9rem;
+    }
+  
+    .instructors-section {
+      grid-template-columns: 1fr;
+    }
+  
+    .timer {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
